@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java-Slider</title>
+    <style>
+        .slider_wraperr {
+            margin-left: 5%;
+            margin-right: 4%;
+            width: 91%;
+        }
+        
+        .slider {
+            width: 100%;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            size: 20px;
+        }
+        
+        .wrap-2 {
+            margin-left: 5%;
+        }
+        
+        .wrap-3 {
+            margin-left: 5%;
+            margin-right: 4%;
+        }
+        
+        .dtlist1 {
+            color: white;
+            display: grid;
+            grid-auto-flow: column;
+        }
+        
+        .optionlist {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .optionlist::before {
+            align-self: center;
+            width: 4px;
+            height: .75rem;
+            background: white;
+            content: "";
+        }
+        
+        .datalist {
+            color: white;
+            display: grid;
+            grid-auto-flow: column;
+        }
+        
+        .optlist21 {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-align: left;
+        }
+        
+        .optlist22 {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-align: center
+        }
+        
+        .optlist23 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center; height: 200px; width: 40%; margin-left: 30%; background-color:rgb(166,8,255); margin-top: 20%;">
+        <div class="wrap-3">
+            <datalist class="datalist">
+                <option class="optlist21" value="0" label="0">0</option>
+                <option class="optlist22" value="1" label="55">55</option>
+                <option class="optlist23" value="2" label="120">120</option>
+            </datalist>
+        </div>
+        <div class="slider_wraperr">
+            <input type="range" class="slider" min="0" max="120" value="0" oninput="num.value=this.value">
+            <br>
+            <button style=" height: 20px; width: 70px; background-color:rgb(155, 183, 173); border: 1px solid white;"><span><output id="num">0</output></span></button>
+        </div>
+        <div class="slider_wraperr">
+            <input type="range" class="slider" min="0" max="120" step="10" value="0" oninput="num1.value=this.value">
+        </div>
+        <div class="wrap-2">
+            <datalist class="dtlist1">
+                <option class="optionlist" value="0" label="0">0    </option>
+                <option class="optionlist" value="1" label="10">10  </option>
+                <option class="optionlist" value="2" label="20">20  </option>
+                <option class="optionlist" value="3" label="30">30  </option>
+                <option class="optionlist" value="4" label="40">40  </option>
+                <option class="optionlist" value="5" label="50">50  </option>
+                <option class="optionlist" value="6" label="60">60  </option>
+                <option class="optionlist" value="7" label="70">70  </option>
+                <option class="optionlist" value="8" label="80">80  </option>
+                <option class="optionlist" value="9" label="90">90  </option>
+                <option class="optionlist" value="9" label="100">100</option>
+                <option class="optionlist" value="9" label="110">110</option>
+                <option class="optionlist" value="9" label="120">120</option>
+            </datalist>
+            <button style=" margin-top:20px; height: 20px; width: 70px; background-color:rgb(155, 183, 173); border: 1px solid white;"><span><output id="num1">0</output></span></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
